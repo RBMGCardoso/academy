@@ -4,6 +4,7 @@ runs:
   using: composite
   steps:
     - name: Build Dockerfile
-    - run: |
+      run: |
         docker build . --file Dockerfile --tag academy:$(date +%s)
         docker image ls
+      shell: bash
