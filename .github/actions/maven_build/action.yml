@@ -1,0 +1,8 @@
+name: custom-action
+description: custom-description
+runs:
+  using: composite
+  steps:
+    - run: |
+        echo "Update me with the necessary commands"
+      shell: bash
