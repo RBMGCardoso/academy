@@ -33,5 +33,5 @@ jobs:
       run: |
         docker build . --file Dockerfile --tag academy:$(date +%s)
         docker image ls
-    - name: Custom action
+    - name: Custom actionx\
       uses: ./.github/actions/maven_build
