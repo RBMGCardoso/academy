@@ -1,0 +1,9 @@
+name: Dockerbuild
+description: DockerBuild
+runs:
+  using: composite
+  steps:
+    - name: Build Dockerfile
+    - run: |
+        docker build . --file Dockerfile --tag academy:$(date +%s)
+        docker image ls
