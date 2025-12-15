@@ -1,8 +1,9 @@
-name: custom-action
-description: custom-description
+name: Maven Build Action
+description: Build Java project with Maven
+
 runs:
-  using: composite
+  using: "composite"
   steps:
-    - run: |
-        echo "Update me with the necessary commands"
+    - name: Build with Maven
+      run: mvn -B package
       shell: bash
